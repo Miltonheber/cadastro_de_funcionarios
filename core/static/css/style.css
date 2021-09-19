@@ -1,0 +1,54 @@
+body {
+	text-align:center;
+	font-family:Roboto;
+	background:white;
+	margin:1px;
+	padding:5px;
+}
+
+.titulos{
+	padding:8px;
+	font-size:20px;
+	color:black;
+
+}
+.listar-button{
+	border:1px solid #000;
+	border-radius:1%;
+	padding:5px;
+	margin-bottom:5px;
+	margin-top:5px;
+
+
+
+}
+.cadastrar-button{
+	border: 1px solid #000;
+	border-radius:1%;
+	padding:5px;
+
+}
+.container{
+	margin-top:5px;
+	margin-left:2px;
+	margin-right:2px;
+
+}
+
+.letra-maior{
+	font-size:20px;
+	padding:5px;
+
+}
+.letra-menor{
+	font-size:12px;
+	font-family:Arial;
+	padding:5px;
+	font-style:none;
+
+}
+a{
+	text-decoration:none;
+
+}
+
