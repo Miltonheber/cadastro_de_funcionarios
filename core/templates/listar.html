@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block titulo %}{% endblock %}
+
+
+{% block conteudo %}
+	{% if trabalhador %}
+		<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Profissão</th>
+      <th scope="col">Salarío</th>
+      <th scope="col">Acções</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ele in trabalhador %}
+    <tr>
+      <th scope="row">{{ele.id}}</th>
+      <td>{{ele.nome}}</td>
+      <td>{{ele.profissao}}</td>
+      <td>{{ele.salario}}</td>
+      <td><button class="">Actualizar</button><button class="">Excluir</button></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+	{% endif %}
+	{% if not trabalhador  %}
+	<h1 class="titulos">Sem trabalhadores cadastrados:(</h1>
+	{% endif %}
+
+{% endblock %}
+
+
